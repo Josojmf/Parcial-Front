@@ -8,6 +8,7 @@ import * as $ServerSide from "./routes/ServerSide.tsx";
 import * as $ServerSideSearch from "./routes/ServerSideSearch.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $InputForm from "./islands/InputForm.tsx";
 import * as $WordCSR from "./islands/WordCSR.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
@@ -21,6 +22,7 @@ const manifest = {
     "./routes/index.tsx": $index,
   },
   islands: {
+    "./islands/InputForm.tsx": $InputForm,
     "./islands/WordCSR.tsx": $WordCSR,
   },
   baseUrl: import.meta.url,
