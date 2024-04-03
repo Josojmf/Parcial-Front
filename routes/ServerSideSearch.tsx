@@ -22,7 +22,7 @@ export const handler: Handlers = {
 const Page = (props: PageProps<Word | undefined>) => {
   const word = props.data as Word;
   return (
-    <div>
+    <div className="MainPage">
       <Nav />
       <h1 className="TitleSSR">My Dictionary</h1>
       <InputForm />

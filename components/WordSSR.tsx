@@ -6,6 +6,7 @@ const WordComponent: FunctionComponent<{ word: Word | undefined }> = (
 ) => {
 
   return (
+    <div className="MainPage">
     <div className="WordSSR">
       <div className="WordSSRTitle">{props.word?.word}</div>
       {props.word?.meanings.map((meaning) => {
@@ -13,14 +14,16 @@ const WordComponent: FunctionComponent<{ word: Word | undefined }> = (
           <div>
             <h2>{meaning.partofSpeech}</h2>
             {meaning.definitions.map((definition) => {
-              return <div className="DefinitionSSR">
+              return (
+              <a className="DefinitionSSR" href="/WordPage">
                 {definition.definition}
-                </div>;
+                </a>)
             })}
           </div>
         );
       })}
     </div>
+  </div>
   );
   
 };

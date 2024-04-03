@@ -1,7 +1,7 @@
 import Nav from "../components/Nav.tsx";
 export default function Home() {
   return (
-    <div>
+    <div className="MainPage">
       <div>
         <Nav />
       </div>

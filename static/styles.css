@@ -13,6 +13,16 @@
   border-bottom-right-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
+.MainPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+  overflow: hidden;
+  background-color: #f3f4f6;
+}
+
 .ServerSidePanel {
   display: flex;
   justify-content: flex-start;
@@ -50,7 +60,7 @@
   position: absolute;
   top: 20%;
   width: 31%;
-  max-height: 90vh;
+  max-height: 70vh;
   overflow-y: scroll;
   overflow-x: hidden;
   height: fit-content;
@@ -64,6 +74,13 @@
   left: 2%;
 }
 .DefinitionSSR {
+  padding: 0.5em;
+  border-color: #6b7280;
+  color: black;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
   position: relative;
   overflow: scroll;
   max-height: fit-content;
@@ -110,7 +127,7 @@
 }
 .TitleSSR {
   position: absolute;
-transform: translate(-2%, 30%);
+transform: translate(-340%, 30%);
   color:  #6b7280;
   font-size: 50px;
   font-weight: bold;

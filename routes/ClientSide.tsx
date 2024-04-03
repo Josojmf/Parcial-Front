@@ -1,5 +1,4 @@
 import { FreshContext, Handlers, PageProps } from "$fresh/server.ts";
-import { useState } from "preact/hooks";
 import WordComponent from "../components/WordSSR.tsx";
 import Axios from "npm:axios";
 import Nav from "../components/Nav.tsx";
@@ -23,8 +22,9 @@ export const handler: Handlers = {
   }
 };
 const Page = (props: PageProps<Word | undefined>) => {
+
   return (
-    <div>
+    <div className="MainPage">
       <Nav />
       <h1 className="TitleSSR">Client Side</h1>
       <div className="ServerSideSearchContainer">

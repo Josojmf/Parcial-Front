@@ -6,6 +6,7 @@ import * as $ClientSide from "./routes/ClientSide.tsx";
 import * as $ClientSideSearch from "./routes/ClientSideSearch.tsx";
 import * as $ServerSide from "./routes/ServerSide.tsx";
 import * as $ServerSideSearch from "./routes/ServerSideSearch.tsx";
+import * as $WordPage from "./routes/WordPage.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $InputForm from "./islands/InputForm.tsx";
@@ -18,6 +19,7 @@ const manifest = {
     "./routes/ClientSideSearch.tsx": $ClientSideSearch,
     "./routes/ServerSide.tsx": $ServerSide,
     "./routes/ServerSideSearch.tsx": $ServerSideSearch,
+    "./routes/WordPage.tsx": $WordPage,
     "./routes/_app.tsx": $_app,
     "./routes/index.tsx": $index,
   },
